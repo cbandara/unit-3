@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Quiz App</h1>
+        <div class="content"></div>
+        
+        <section class="question-section">
+          <form id="js-quiz-form">
+              <h2 class="question-number">Question <span class="current-question-num">1</span>
+                 out of <span class="num-of-questions">5</span></h2>
+              <fieldset>
+                <h3 class="question">What is your favorite color?</h3>
+                <div>
+                  <input type="radio" id="a1" name="answer" value="Blue"/>
+                  <label for="a1">Blue</label>
+                </div>
+                <div>
+                  <input type="radio" id="a2" name="answer"value="Red"/>
+                  <label for="a2">Red</label>
+                </div>
+                <div>
+                  <input type="radio" id="a3" name="answer"value="Yellow"/>
+                  <label for="a3">Yellow</label>
+                </div>
+                <div>
+                  <input type="radio" id="a4" name="answer"value="Red"/>
+                  <label for="a4">Yellow</label>
+                </div>
+              </fieldset>
+              <button class="submit-answer" type="submit">Submit</button>
+          </form>
+          <footer class="current-score">
+            <p>Score: <span class="correct-answers">0</span> correct <span class="incorrect-answers">0</span> wrong</p>
+          </footer>
+        </section>
+
+        <section class="welcome-section">
+          <h3></h3>
+          <button class="start-quiz" type="button">Start Quiz</button>
+        </section>
+
+        <section class="answer-section">
+          <div>
+            <h2 class="question-number">Question <span class="current-question-num">1</span>
+              out of <span class="num-of-questions">5</span></h2>
+              <p>Question: <span class="question"></span></p>
+              <p>You Answered: <span class="given-answer"></span></p>
+              <p>Correct Answer: <span class="correct-answer"></span></p>
+              <button class="next" type="button">Next</button>
+          </div>
+          <footer class="current-score">
+              <p>Score: <span class="correct-answers">0</span> correct <span class="incorrect-answers">0</span> wrong</p>
+          </footer>
+        </section>
+
+        <section class="results-section">
+          <div>
+            <h2>You scored <span class="num-correct"></span> correct
+               and <span class="num-incorrect"></span> incorrect out of <span class="num-questions"></span>
+            </h2>
+            <button class="retake" type="button">Retake</button>
+          </div>
+        </section>
+    </div>
+    <script src="//code.jquery.com/jquery.min.js"></script>
+</body>
+</html>
